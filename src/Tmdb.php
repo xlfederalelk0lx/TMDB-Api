@@ -10,16 +10,16 @@ namespace TMDB;
 
 
 use Curl\Curl;
-use TMDB\Traits\Authentication;
+use TMDB\Traits\Certifications;
 
-class Tmdb{
+class Tmdb extends \Exception {
 
     private $base_url = 'https://api.themoviedb.org/';
     private $version = 3;
     private $response;
     private $api_key = "";
 
-    use Authentication;
+    use Certifications;
 
     public function __construct($api_key = "")
     {
@@ -37,21 +37,25 @@ class Tmdb{
     private function get($path_url,array $parameters = []){
         $url = $this->base_url.$this->version."/".$path_url."?api_key=".$this->api_key;
         if(sizeof($parameters)>0){
-            $url = $url."&".http_build_query($get_parameters);
+            $url = $url."&".http_build_query($parameters);
         }
         $http = new Curl();
+        $http->setReferer("https://developers.themoviedb.org");
+        $http->setUserAgent($_SERVER["HTTP_USER_AGENT"]);
         $http->get($url);
-        return $http->response;
+        return $this->response_json($http->response);
     }
 
     private function post($path_url, array $parameters = []){
         $url = $this->base_url.$this->version."/".$path_url."?api_key=".$this->api_key;
         $http = new Curl();
+        $http->setReferer("https://developers.themoviedb.org");
+        $http->setUserAgent($_SERVER["HTTP_USER_AGENT"]);
         if(sizeof($parameters)>0){
             $http->setHeader("Content-Type","application/x-www-form-urlencoded");
         }
         $http->post($url,$parameters);
-        return $http->response;
+        return $this->response_json($http->response);
     }
 
     private function response_json($response,$print_json = false){
@@ -72,5 +76,11 @@ class Tmdb{
             header('Content-Type: application/json');
             echo json_encode($json);
         }
+    }
+
+    public function errorMessage() {
+        //error message
+        $errorMsg = $this->getMessage().' is not a valid E-Mail address.';
+        echo  $errorMsg;
     }
 }
