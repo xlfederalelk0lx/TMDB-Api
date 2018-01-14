@@ -12,6 +12,7 @@ namespace TMDB;
 use Curl\Curl;
 use TMDB\Traits\Certifications;
 use TMDB\Traits\Changes;
+use TMDB\Traits\Collections;
 
 class Tmdb extends \Exception {
 
@@ -22,6 +23,7 @@ class Tmdb extends \Exception {
 
     use Certifications;
     use Changes;
+    use Collections;
 
     public function __construct($api_key = "")
     {
