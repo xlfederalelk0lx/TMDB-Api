@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab2492d-ee1d-4db9-8b14-eedea16a315f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Changes.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change beforePath="$PROJECT_DIR$/src/Tmdb.php" afterPath="$PROJECT_DIR$/src/Tmdb.php" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/Authentication.php" afterPath="$PROJECT_DIR$/src/Traits/Certifications.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +33,8 @@
       <file leaf-file-name="Tmdb.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tmdb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="272">
+              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="e#110#124#0#PHP" expanded="true" />
               </folding>
@@ -52,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Certifications.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Traits/Certifications.php">
+      <file leaf-file-name="Changes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Traits/Changes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+            <state relative-caret-position="391">
+              <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -73,8 +73,9 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Traits/JsonResponse.php" />
         <option value="$PROJECT_DIR$/src/Traits/Authentication.php" />
-        <option value="$PROJECT_DIR$/src/Tmdb.php" />
         <option value="$PROJECT_DIR$/src/Traits/Certifications.php" />
+        <option value="$PROJECT_DIR$/src/Tmdb.php" />
+        <option value="$PROJECT_DIR$/src/Traits/Changes.php" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
@@ -153,6 +154,12 @@
               <item name="TMDB Api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="TMDB Api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TMDB Api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -189,12 +196,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515960903226</updated>
-      <workItem from="1515960904763" duration="11048000" />
+      <workItem from="1515960904763" duration="11527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11048000" />
+    <option name="totallyTimeSpent" value="11527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -321,20 +328,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Traits/Certifications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tmdb.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="272">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
             <element signature="e#110#124#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Traits/Certifications.php">
+    <entry file="file://$PROJECT_DIR$/src/Traits/Changes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        <state relative-caret-position="391">
+          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
           <folding />
         </state>
       </provider>
