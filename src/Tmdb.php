@@ -17,8 +17,9 @@ use TMDB\Traits\Companies;
 use TMDB\Traits\Configuration;
 use TMDB\Traits\Credits;
 use TMDB\Traits\Discover;
+use TMDB\Traits\Find;
 
-class Tmdb extends \Exception {
+class Tmdb {
 
     private $base_url = 'https://api.themoviedb.org/';
     private $version = 3;
@@ -32,6 +33,7 @@ class Tmdb extends \Exception {
     use Configuration;
     use Credits;
     use Discover;
+    use Find;
 
     public function __construct($api_key = "")
     {
@@ -90,9 +92,4 @@ class Tmdb extends \Exception {
         }
     }
 
-    public function errorMessage() {
-        //error message
-        $errorMsg = $this->getMessage().' is not a valid E-Mail address.';
-        echo  $errorMsg;
-    }
 }
