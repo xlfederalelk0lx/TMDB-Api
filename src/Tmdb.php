@@ -14,6 +14,7 @@ use TMDB\Traits\Certifications;
 use TMDB\Traits\Changes;
 use TMDB\Traits\Collections;
 use TMDB\Traits\Companies;
+use TMDB\Traits\Configuration;
 
 class Tmdb extends \Exception {
 
@@ -26,6 +27,7 @@ class Tmdb extends \Exception {
     use Changes;
     use Collections;
     use Companies;
+    use Configuration;
 
     public function __construct($api_key = "")
     {
