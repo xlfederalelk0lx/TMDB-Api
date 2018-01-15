@@ -29,5 +29,11 @@ $tmdb->SearchMovies("batman");
 $tmdb->SearchMovies("movie title","language","page");
 $tmdb->SearchMovies("batman","es-ES",1);
  
+Get movie information
+$tmdb->GetMovieDetails(movie_id);
+$tmdb->GetMovieDetails(346364);
+ 
+$tmdb->GetMovieDetails(movie_id,language);
+$tmdb->GetMovieDetails(346364,"es-ES")
 
 ```
