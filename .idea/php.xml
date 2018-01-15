@@ -4,30 +4,6 @@
     <include_path>
       <path value="$PROJECT_DIR$/libraries/composer" />
       <path value="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class" />
-      <path value="$PROJECT_DIR$/libraries/psr/container" />
-      <path value="$PROJECT_DIR$/libraries/psr/log" />
-      <path value="$PROJECT_DIR$/libraries/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/libraries/nesbot/carbon" />
-      <path value="$PROJECT_DIR$/libraries/symfony/routing" />
-      <path value="$PROJECT_DIR$/libraries/symfony/debug" />
-      <path value="$PROJECT_DIR$/libraries/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/libraries/symfony/translation" />
-      <path value="$PROJECT_DIR$/libraries/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/libraries/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/libraries/symfony/http-foundation" />
-      <path value="$PROJECT_DIR$/libraries/symfony/finder" />
-      <path value="$PROJECT_DIR$/libraries/symfony/polyfill-php70" />
-      <path value="$PROJECT_DIR$/libraries/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/libraries/paragonie/random_compat" />
-      <path value="$PROJECT_DIR$/libraries/illuminate/container" />
-      <path value="$PROJECT_DIR$/libraries/illuminate/pipeline" />
-      <path value="$PROJECT_DIR$/libraries/illuminate/routing" />
-      <path value="$PROJECT_DIR$/libraries/illuminate/session" />
-      <path value="$PROJECT_DIR$/libraries/illuminate/http" />
-      <path value="$PROJECT_DIR$/libraries/illuminate/contracts" />
-      <path value="$PROJECT_DIR$/libraries/illuminate/support" />
-      <path value="$PROJECT_DIR$/libraries/illuminate/filesystem" />
-      <path value="$PROJECT_DIR$/libraries/soloslee/json-response" />
     </include_path>
   </component>
 </project>
