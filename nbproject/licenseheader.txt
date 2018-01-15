@@ -1,0 +1,15 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Project's Name: ${project.name}
+${licensePrefix}Description: Libreria para el manejo de la api TMDB
+${licensePrefix}Programming Languages: PHP
+${licensePrefix}Programmer: Jose Luis Coyotzi Ipatzi
+${licensePrefix}File Created: ${date}, ${time}
+${licensePrefix}File Name: ${nameAndExt}
+${licensePrefix}Email: jlci811122@gmail.com
+${licensePrefix}
+${licensePrefix}Copyright @${date?date?string("yyyy")} xlFederalElk0lx.
+<#if licenseLast??>
+${licenseLast}
+</#if>
