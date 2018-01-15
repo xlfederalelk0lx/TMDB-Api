@@ -18,6 +18,7 @@ use TMDB\Traits\Configuration;
 use TMDB\Traits\Credits;
 use TMDB\Traits\Discover;
 use TMDB\Traits\Find;
+use TMDB\Traits\Genres;
 
 class Tmdb {
 
@@ -34,6 +35,7 @@ class Tmdb {
     use Credits;
     use Discover;
     use Find;
+    use Genres;
 
     public function __construct($api_key = "")
     {
