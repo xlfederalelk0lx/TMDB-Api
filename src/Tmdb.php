@@ -21,6 +21,7 @@ use TMDB\Traits\Find;
 use TMDB\Traits\Genres;
 use TMDB\Traits\Jobs;
 use TMDB\Traits\Keywords;
+use TMDB\Traits\Movies;
 
 class Tmdb {
 
@@ -40,6 +41,7 @@ class Tmdb {
     use Genres;
     use Jobs;
     use Keywords;
+    use Movies;
 
     public function __construct($api_key = "")
     {
@@ -78,7 +80,7 @@ class Tmdb {
         return $this->response_json($http->response);
     }
 
-    private function response_json($response,$print_json = false){
+    protected function response_json($response,$print_json = false){
         $json = new \stdClass();
         if(@$response->status_code > 0 ){
             @$json->status = "Error";
