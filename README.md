@@ -20,20 +20,6 @@ require_once "libraries/autoload.php";
  
 Initialize
 $tmdb = new TMDB\Tmdb("11ac02d919c368e330060a3b2e0bb315");
- 
-Search a movie
- 
 $tmdb->SearchMovies("movie title");
-$tmdb->SearchMovies("batman");
- 
-$tmdb->SearchMovies("movie title","language","page");
-$tmdb->SearchMovies("batman","es-ES",1);
- 
-Get movie information
-$tmdb->GetMovieDetails(movie_id);
-$tmdb->GetMovieDetails(346364);
- 
-$tmdb->GetMovieDetails(movie_id,language);
-$tmdb->GetMovieDetails(346364,"es-ES")
 
 ```
