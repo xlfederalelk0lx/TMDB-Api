@@ -20,6 +20,7 @@ use TMDB\Traits\Discover;
 use TMDB\Traits\Find;
 use TMDB\Traits\Genres;
 use TMDB\Traits\Jobs;
+use TMDB\Traits\Keywords;
 
 class Tmdb {
 
@@ -38,6 +39,7 @@ class Tmdb {
     use Find;
     use Genres;
     use Jobs;
+    use Keywords;
 
     public function __construct($api_key = "")
     {
