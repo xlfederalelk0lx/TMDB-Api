@@ -172,7 +172,7 @@ trait Movies {
 
     /**
      * Get the videos that have been added to a movie.
-     * 
+     *
      * @param int $movie_id
      * Example: 550
      * @param string $language

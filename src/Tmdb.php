@@ -22,6 +22,7 @@ use TMDB\Traits\Genres;
 use TMDB\Traits\Jobs;
 use TMDB\Traits\Keywords;
 use TMDB\Traits\Movies;
+use TMDB\Traits\Search;
 
 class Tmdb {
 
@@ -42,6 +43,7 @@ class Tmdb {
     use Jobs;
     use Keywords;
     use Movies;
+    use Search;
 
     public function __construct($api_key = "")
     {

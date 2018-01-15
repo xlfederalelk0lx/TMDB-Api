@@ -12,4 +12,4 @@ $tmdb = new TMDB\Tmdb("11ac02d919c368e330060a3b2e0bb315");
 
 echo header('Content-Type: application/json');
 
-echo json_encode($tmdb->GetMovieVideos(346364,"es-ES"));
+echo json_encode($tmdb->SearchMovies("batman","es-ES",1));

@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4ab2492d-ee1d-4db9-8b14-eedea16a315f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change beforePath="$PROJECT_DIR$/src/Tmdb.php" afterPath="$PROJECT_DIR$/src/Tmdb.php" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/Credits.php" afterPath="$PROJECT_DIR$/src/Traits/Credits.php" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/Movies.php" afterPath="$PROJECT_DIR$/src/Traits/Movies.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,12 +29,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Movies.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Traits/Movies.php">
+      <file leaf-file-name="Search.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Traits/Search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="174" column="7" lean-forward="false" selection-start-line="174" selection-start-column="7" selection-end-line="174" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="341">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="e#7#303#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,8 +44,8 @@
       <file leaf-file-name="Tmdb.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tmdb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="82" column="14" lean-forward="false" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+            <state relative-caret-position="204">
+              <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
               <folding>
                 <element signature="e#110#124#0#PHP" expanded="true" />
               </folding>
@@ -56,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -84,9 +85,10 @@
         <option value="$PROJECT_DIR$/src/Traits/Jobs.php" />
         <option value="$PROJECT_DIR$/src/Traits/Keywords.php" />
         <option value="$PROJECT_DIR$/src/Traits/Credits.php" />
-        <option value="$PROJECT_DIR$/src/Tmdb.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/src/Traits/Movies.php" />
+        <option value="$PROJECT_DIR$/src/Tmdb.php" />
+        <option value="$PROJECT_DIR$/src/Traits/Search.php" />
       </list>
     </option>
   </component>
@@ -207,12 +209,12 @@
       <option name="presentableId" value="Default" />
       <updated>1515960903226</updated>
       <workItem from="1515960904763" duration="23478000" />
-      <workItem from="1515991283125" duration="6089000" />
+      <workItem from="1515991283125" duration="6987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29567000" />
+    <option name="totallyTimeSpent" value="30465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -411,14 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Traits/Jobs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -435,16 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tmdb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="82" column="14" lean-forward="false" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
-          <folding>
-            <element signature="e#110#124#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Traits/Keywords.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -456,7 +440,7 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -466,6 +450,34 @@
         <state relative-caret-position="205">
           <caret line="174" column="7" lean-forward="false" selection-start-line="174" selection-start-column="7" selection-end-line="174" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tmdb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+          <folding>
+            <element signature="e#110#124#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Traits/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#303#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
