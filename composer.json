@@ -1,0 +1,28 @@
+{
+  "name": "xlfederalelk0lx/tmdb_api",
+  "description": "Libreria para el manejo de la api TMDB",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jose Luis Coyotzi Ipatzi",
+      "email": "jlci811122@gmail.com"
+    }
+  ],
+  "config": {
+    "vendor-dir": "libraries/"
+  },
+  "autoload": {
+    "psr-4": {
+      "TMDB\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TMDB\\": "src/"
+    }
+  },
+  "require": {
+    "php-curl-class/php-curl-class": "^8.0"
+  }
+}
