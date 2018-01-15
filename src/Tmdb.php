@@ -16,6 +16,7 @@ use TMDB\Traits\Collections;
 use TMDB\Traits\Companies;
 use TMDB\Traits\Configuration;
 use TMDB\Traits\Credits;
+use TMDB\Traits\Discover;
 
 class Tmdb extends \Exception {
 
@@ -30,6 +31,7 @@ class Tmdb extends \Exception {
     use Companies;
     use Configuration;
     use Credits;
+    use Discover;
 
     public function __construct($api_key = "")
     {
