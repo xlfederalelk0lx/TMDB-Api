@@ -88,7 +88,7 @@ trait Discover {
         ,$first_air_date_lte="",$first_air_date_year="",$page=1,$timezone="America/New_York",$vote_average_gte=0,$vote_count_gte=0
         ,$with_genres="",$without_genres="",$with_runtime_gte="",$with_runtime_lte="",$include_null_first_air_dates=false
         ,$with_original_language="",$without_keywords="",$screened_theatrically=false){
-        return $this->get("discover/tv",[
+        return $this->_get("discover/tv",[
             "language"=>$language,
             "sort_by"=>$sort_by,
             "air_date.gte"=>$air_date_gte,
@@ -213,7 +213,7 @@ trait Discover {
                                   $vote_count_lte=1,$vote_average_gte=0,$vote_average_lte=0,$with_cast="",$with_crew="",
                                   $with_companies="",$with_genres="",$with_keywords="",$with_people="",$year="",$without_genres="",
                                   $with_runtime_gte="",$with_runtime_lte="",$with_release_type="",$with_original_language="",$without_keywords=""){
-        return $this->get("discover/movie",[
+        return $this->_get("discover/movie",[
             "language"=>$language,
             "region"=>$region,
             "sort_by"=>$sort_by,

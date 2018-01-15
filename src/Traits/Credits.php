@@ -31,6 +31,6 @@ trait Credits {
      * @return object|\stdClass|json
      */
     public function GetCreditDetails($id=""){
-        return $this->get("credit/".$id);
+        return $this->_get("credit/".$id);
     }
 }

@@ -29,7 +29,7 @@ trait Collections {
      * @return object|stdClass|json
      */
     public function GetCollectionDetails($id = 0,$language = "en-US"){
-        return $this->get("collection/".$id,[
+        return $this->_get("collection/".$id,[
             "language" => $language
         ]);
     }
@@ -42,7 +42,7 @@ trait Collections {
      * @return object|stdClass|json
      */
     public function GetCollectionImages($id = 0,$language = "en-US"){
-        return $this->get("collection/".$id."}/images",[
+        return $this->_get("collection/".$id."}/images",[
             "language" => $language
         ]);
     }

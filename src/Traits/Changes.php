@@ -32,7 +32,7 @@ trait Changes {
      * @return object|stdClass|json
      */
     public function GetMovieChangeList($end_date = '', $start_date = '', $page = 1){
-        return $this->get("movie/changes",[
+        return $this->_get("movie/changes",[
             "end_date" => $end_date,
             "start_date" => $start_date,
             "page" => $page
@@ -50,7 +50,7 @@ trait Changes {
      * @return object|stdClass|json
      */
     public function GetTVChangeList($end_date = '', $start_date = '', $page = 1){
-        return $this->get("tv/changes",[
+        return $this->_get("tv/changes",[
             "end_date" => $end_date,
             "start_date" => $start_date,
             "page" => $page
@@ -68,7 +68,7 @@ trait Changes {
      * @return object|stdClass|json
      */
     public function GetPersonChangeList($end_date = '', $start_date = '', $page = 1){
-        return $this->get("person/changes",[
+        return $this->_get("person/changes",[
             "end_date" => $end_date,
             "start_date" => $start_date,
             "page" => $page

@@ -53,7 +53,7 @@ trait Find {
      * @return object|\stdClass|json
      */
     public function FindbyID($external_id="",$language="en-US",$external_source="imdb_id"){
-        return $this->get("find/".$external_id,[
+        return $this->_get("find/".$external_id,[
             "language"=>$language,
             "external_source"=>$external_source
         ]);

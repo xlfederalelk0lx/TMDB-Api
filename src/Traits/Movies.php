@@ -35,7 +35,7 @@ trait Movies {
      * @return object|\stdClass|json
      */
     public function GetMovieDetails($movie_id=0,$language="en-US"){
-        return $this->get("movie/".$movie_id,[
+        return $this->_get("movie/".$movie_id,[
             "language"=>$language
         ]);
     }
@@ -51,7 +51,7 @@ trait Movies {
      * @return object|\stdClass|json
      */
     public function GetMovieAlternativeTitles($movie_id=0,$country=""){
-        return $this->get("movie/".$movie_id."/alternative_titles",[
+        return $this->_get("movie/".$movie_id."/alternative_titles",[
             "country"=>$country
         ]);
     }
@@ -77,7 +77,7 @@ trait Movies {
      * @return object|\stdClass|json
      */
     public function GetMovieChanges($movie_id=0,$start_date="",$end_date="",$page=1){
-        return $this->get("movie/".$movie_id."/changes",[
+        return $this->_get("movie/".$movie_id."/changes",[
             "start_date"=>$start_date,
             "end_date"=>$end_date,
             "page"=>$page
@@ -92,7 +92,7 @@ trait Movies {
      * @return object|\stdClass|json
      */
     public function GetMovieCast($movie_id=0){
-        $response = $this->get("movie/".$movie_id."/credits");
+        $response = $this->_get("movie/".$movie_id."/credits");
         unset($response->response->crew);
         return $response;
     }
@@ -105,7 +105,7 @@ trait Movies {
      * @return object|\stdClass|json
      */
     public function GetMovieCrew($movie_id=0){
-        $response = $this->get("movie/".$movie_id."/credits");
+        $response = $this->_get("movie/".$movie_id."/credits");
         unset($response->response->cast);
         return $response;
     }
@@ -118,7 +118,7 @@ trait Movies {
      * @return object|\stdClass|json
      */
     public function GetMovieBackdrops($movie_id=0){
-        $response = $this->get("movie/".$movie_id."/images");
+        $response = $this->_get("movie/".$movie_id."/images");
         unset($response->response->posters);
         return $response;
     }
@@ -137,7 +137,7 @@ trait Movies {
      * @return object|\stdClass|json
      */
     public function GetMoviePosters($movie_id=0,$language="es"){
-        $response = $this->get("movie/".$movie_id."/images",[
+        $response = $this->_get("movie/".$movie_id."/images",[
             "include_image_language"=>$language
         ]);
         unset($response->response->backdrops);
@@ -152,7 +152,7 @@ trait Movies {
      * @return object|\stdClass|json
      */
     public function GetMovieKeywords($movie_id=0){
-        return $this->get("movie/".$movie_id."/keywords");
+        return $this->_get("movie/".$movie_id."/keywords");
     }
 
     /**
@@ -167,7 +167,7 @@ trait Movies {
      * @return  object|\stdClass|json
      */
     public function GetMovieReleaseDates($movie_id=0){
-        return $this->get("movie/".$movie_id."/release_dates");
+        return $this->_get("movie/".$movie_id."/release_dates");
     }
 
     /**
@@ -184,7 +184,7 @@ trait Movies {
      * @return object|\stdClass|json
      */
     public function GetMovieVideos($movie_id=0,$language="en-US"){
-        return $this->get("movie/".$movie_id."/videos",[
+        return $this->_get("movie/".$movie_id."/videos",[
             "language"=>$language
         ]);
     }

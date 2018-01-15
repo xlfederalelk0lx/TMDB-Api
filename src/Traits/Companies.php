@@ -29,7 +29,7 @@ trait Companies {
      * @return object|\stdClass|json
      */
     public function GetCompanyDetails($id = 0) {
-        return $this->get("company/".$id);
+        return $this->_get("company/".$id);
     }
 
     /**
@@ -42,7 +42,7 @@ trait Companies {
      * @return object|\stdClass|json
      */
     public function GetCompanyMovies($id=0,$language="en-US"){
-        return $this->get("company/".$id."/movies",[
+        return $this->_get("company/".$id."/movies",[
             "language"=>$language
         ]);
     }

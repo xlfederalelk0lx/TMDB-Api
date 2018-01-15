@@ -24,11 +24,10 @@ use TMDB\Traits\Keywords;
 use TMDB\Traits\Movies;
 use TMDB\Traits\Search;
 
-class Tmdb {
+class Tmdb extends Curl {
 
     private $base_url = 'https://api.themoviedb.org/';
     private $version = 3;
-    private $response;
     private $api_key = "";
 
     use Certifications;
@@ -47,8 +46,10 @@ class Tmdb {
 
     public function __construct($api_key = "")
     {
+        parent::__construct(NULL);
+        $this->setUserAgent($_SERVER["HTTP_USER_AGENT"]);
         if(strlen($api_key) > 32 || strlen($api_key) < 32){
-            return $this->response_json(json_decode(json_encode([
+            echo  $this->response_json(json_decode(json_encode([
                 "status_code" => 202,
                 "status_message" => "The size of the api key must be 32 characters"
             ])),true);
@@ -58,19 +59,17 @@ class Tmdb {
         }
     }
 
-    private function get($path_url,array $parameters = []){
+    private function _get($path_url,array $parameters = []){
         $url = $this->base_url.$this->version."/".$path_url."?api_key=".$this->api_key;
         if(sizeof($parameters)>0){
             $url = $url."&".http_build_query($parameters);
         }
-        $http = new Curl();
-        $http->setReferer("https://developers.themoviedb.org");
-        $http->setUserAgent($_SERVER["HTTP_USER_AGENT"]);
-        $http->get($url);
-        return $this->response_json($http->response);
+        $this->setReferer("https://developers.themoviedb.org");
+        $this->get($url);
+        return $this->response_json($this->response);
     }
 
-    private function post($path_url, array $parameters = []){
+    private function _post($path_url, array $parameters = []){
         $url = $this->base_url.$this->version."/".$path_url."?api_key=".$this->api_key;
         $http = new Curl();
         $http->setReferer("https://developers.themoviedb.org");

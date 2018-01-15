@@ -27,7 +27,7 @@ trait Certifications {
      * @return object|stdClass|json
      */
     public function GetMovieCertifications(){
-        return $this->get("certification/movie/list");
+        return $this->_get("certification/movie/list");
     }
     
     /**
@@ -36,7 +36,7 @@ trait Certifications {
      * @return object|stdClass|json
      */
     public function GetTVCertifications(){
-        return $this->get("certification/tv/list");
+        return $this->_get("certification/tv/list");
     }
     
 }

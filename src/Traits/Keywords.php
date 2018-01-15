@@ -29,7 +29,7 @@ trait Keywords {
      * @return mixed
      */
     public function GetKeywordDetails($keyword_id=0){
-        return $this->get("keyword/".$keyword_id);
+        return $this->_get("keyword/".$keyword_id);
     }
 
     /**
@@ -48,7 +48,7 @@ trait Keywords {
      * @return mixed
      */
     public function GetKeywordMovies($keyword_id=0,$language="en-US",$include_adult=false){
-        return $this->get("keyword/".$keyword_id."/movies",[
+        return $this->_get("keyword/".$keyword_id."/movies",[
             "language"=>$language,
             "include_adult"=>$include_adult
         ]);

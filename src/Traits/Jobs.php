@@ -27,6 +27,6 @@ trait Jobs {
      * @return object|\stdClass|json
      */
     public function GetJobs(){
-        return $this->get("job/list");
+        return $this->_get("job/list");
     }
 }

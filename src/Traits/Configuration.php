@@ -35,6 +35,6 @@ trait Configuration {
      * @return object|\stdClass
      */
     public function GetAPIConfiguration(){
-        return $this->get("configuration");
+        return $this->_get("configuration");
     }
 }

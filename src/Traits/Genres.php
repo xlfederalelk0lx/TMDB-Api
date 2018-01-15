@@ -33,7 +33,7 @@ trait Genres {
      * @return object|\stdClass|json
      */
     public function GetGenresMovieList($language="en-US"){
-        return $this->get("genre/movie/list",[
+        return $this->_get("genre/movie/list",[
             "language"=>$language
         ]);
     }
@@ -50,7 +50,7 @@ trait Genres {
      * @return object|\stdClass|json
      */
     public function GetGenresTVList($language="en-US"){
-        return $this->get("genre/tv/list",[
+        return $this->_get("genre/tv/list",[
             "language"=>$language
         ]);
     }

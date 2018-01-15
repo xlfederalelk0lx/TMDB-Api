@@ -47,7 +47,7 @@ trait Search {
      * @return object|\stdClass|json
      */
     public function SearchMovies($query="",$language="en-US",$page=1,$include_adult=false,$region="",$year="",$primary_release_year=""){
-        return $this->get("search/movie",[
+        return $this->_get("search/movie",[
             "query"=>$query,
             "language"=>$language,
             "page"=>$page,
