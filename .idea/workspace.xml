@@ -2,7 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab2492d-ee1d-4db9-8b14-eedea16a315f" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+=======
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/TMDB Api.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/autoload.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/composer/ClassLoader.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/composer/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/composer/autoload_classmap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/composer/autoload_namespaces.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/composer/autoload_psr4.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/composer/autoload_real.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/composer/autoload_static.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/composer/installed.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/SECURITY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/composer.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/src/Curl/ArrayUtil.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/src/Curl/CaseInsensitiveArray.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/src/Curl/Curl.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/src/Curl/Decoder.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/src/Curl/MultiCurl.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/src/Curl/StrUtil.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libraries/php-curl-class/php-curl-class/src/Curl/Url.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/nbproject/licenseheader.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/nbproject/project.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/nbproject/project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Tmdb.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Certifications.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Changes.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Collections.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Companies.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Configuration.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Credits.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Discover.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Find.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Genres.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Jobs.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Keywords.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Movies.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traits/Search.php" />
+>>>>>>> 0.5
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -163,12 +215,20 @@
       <option name="presentableId" value="Default" />
       <updated>1515960903226</updated>
       <workItem from="1515960904763" duration="23478000" />
+<<<<<<< HEAD
       <workItem from="1515991283125" duration="9242000" />
+=======
+      <workItem from="1515991283125" duration="9838000" />
+>>>>>>> 0.5
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="32720000" />
+=======
+    <option name="totallyTimeSpent" value="33316000" />
+>>>>>>> 0.5
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
